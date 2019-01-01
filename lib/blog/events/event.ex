@@ -1,6 +1,6 @@
 defmodule Blog.Events.Event do
   @moduledoc """
-  The Event model.
+  The Event controller.
   """
   use Ecto.Schema
   import Ecto.Changeset
