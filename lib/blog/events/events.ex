@@ -31,7 +31,7 @@ defmodule Blog.Events do
 
    """
    def list_future_events do
-     query = from e in Countdown.Events.Event,
+     query = from e in Blog.Events.Event,
        where: e.due >= ^DateTime.utc_now
      Repo.all(query)
    end
